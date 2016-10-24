@@ -22,7 +22,7 @@ First, you must create a GitHub account. When you're done with that you can crea
 
 * Switch to your c9 tab, click the right gear then open "SSH Keys". Copy and paste your SSH key into GitHub. It should start with **ssh-rsa**. Add the SSH key. 
 
-* Finally, open your folder and check  
+* Finally, open your folder and check by typing "ssh -T git@github.com" you should get the message, "Hi **username**! You've successfully authenticated, but GitHub does not provide shell access." This is fine, that means it worked!
 
 
 
