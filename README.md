@@ -14,9 +14,15 @@ _by Samantha Ferris_
 ---
 ## Initial Setup
 For the initial setup, you need to connect your c9 account to GitHub. Here are the steps to doing that.
-* 
-*
-*
+First, you must create a GitHub account. When you're done with that you can create a SSH Key for c9!
+
+* Go to GitHub and click the profile icon at the top right, go to settings and look at the left sidebar. You should see "SSH and GPG keys" section. Click on that.
+
+* When you're done with that, click on "New SSH key", title it "cloud9". 
+
+* Switch to your c9 tab, click the right gear then open "SSH Keys". Copy and paste your SSH key into GitHub. It should start with **ssh-rsa**. Add the SSH key. 
+
+* Finally, open your folder and check  
 
 
 
@@ -25,7 +31,7 @@ For the initial setup, you need to connect your c9 account to GitHub. Here are t
  For the repository setup you must: 
  * 
  *
-*
+ *
 
 
 ---
