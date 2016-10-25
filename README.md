@@ -51,8 +51,8 @@ When you're done. Clck on "SSH". This is a lot better than HTTPS. Copy and paste
  
 #### Savng work onto GitHub
 Here is the work flow for savng your code onto the site.
-    git add **file name**
-    git commit -m "**message relevant to what you did**"
+    git add file name
+    git commit -m "message relevant to what you did"
     git push
 This is used constantly so it's something that you should remember.
 
@@ -62,20 +62,20 @@ ctrl x - Leave commit
 
 ### Commands
 Here are some helpful commands to know. 
-    git status - this is a way to see what you've done recently while coding. You can use it to check many things. This is helpful to remember because it does **not** change your code in anyway.
+    git status - this is a way to see what you've done recently while coding. You can use it to check many things. This is helpful to remember because it does not change your code in anyway.
     
     cd - Changes directory.
         .. - Goes up one level to the parent directory.
     
     mkdir - Creates a new directory.
     
-    rmdir - **Removes** a directory.
+    rmdir - Removes a directory.
     
     touch - Create a new empty file.
     
-    rm - **Remove** a file.
+    rm - Removes a file.
     
-    rm -rf- This **removes** a file with force. **Everything** in the file will be deleted with no questons asked.
+    rm -rf- This removes a file with force. Everything in the file will be deleted with no questons asked.
     
     mv - Rename a drectory.
     
