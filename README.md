@@ -43,8 +43,7 @@ First, you must create a GitHub account. When you're done with that you can crea
     * git commit -m "messsage". Make sure it makes sense! That is gonna help you out a lot.
 Now, we have to make the remote repo. go to GitHub and find "New repositor" It should be in the top-right. Name it **first-repo**. You names should _always_ match. 
 Create your repository.
-When you're done. Clck on "SSH". This is a lot better than HTTPS. Copy and paste the two links into your command line. 
----
+When you're done. Clck on "SSH". This is a lot better than HTTPS. Copy and paste the two links into your command line.
 
 ## Workflow & Commands
  We use a lot of commands in git. Here are some that we use on a daily basis.
@@ -58,6 +57,7 @@ This is used constantly so it's something that you should remember.
 
 ### Stuck?
 q (while in git log) - Escape
+
 ctrl x - Leave commit
 
 ### Commands
