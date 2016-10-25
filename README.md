@@ -28,13 +28,22 @@ First, you must create a GitHub account. When you're done with that you can crea
 
 ---
 ## Repository Setup
- For the repository setup you must: 
- * 
- *
- *
+ To create a repo you must do the following:
 
-
+*  cd into workspace and make a file called "first-repo".
+    * cd ~/workspace
+    * mkdir first-repo
+    * cd first-repo
+    * git init
+    
+* After that, add a README file.
+    * touch README.md
+    * open the README 
+    * save, add
+    * git commit -m "messsage". Make sure it makes sense! That is gonna help you out a lot.
+Now, we have to make the remote repo. go to GitHub and find "New repositor" It should be in the top-right. Name it **first-repo**. You names should _always_ match. 
+Create your repository.
+When you're done. Clck on "SSH". This is a lot better than HTTPS. Copy and paste the two links into your command line. 
 ---
 ## Workflow & Commands
-
-    sample text
+ We use a lot of commands in git. Here are some that we use on a daily basis.
