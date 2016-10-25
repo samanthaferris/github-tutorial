@@ -45,5 +45,50 @@ Now, we have to make the remote repo. go to GitHub and find "New repositor" It s
 Create your repository.
 When you're done. Clck on "SSH". This is a lot better than HTTPS. Copy and paste the two links into your command line. 
 ---
+
 ## Workflow & Commands
  We use a lot of commands in git. Here are some that we use on a daily basis.
+ 
+#### Savng work onto GitHub
+Here is the work flow for savng your code onto the site.
+    git add **file name**
+    git commit -m "**message relevant to what you did**"
+    git push
+This is used constantly so it's something that you should remember.
+
+### Stuck?
+q (while in git log) - Escape
+ctrl x - Leave commit
+
+### Commands
+Here are some helpful commands to know. 
+    git status - this is a way to see what you've done recently while coding. You can use it to check many things. This is helpful to remember because it does **not** change your code in anyway.
+    
+    cd - Changes directory.
+        .. - Goes up one level to the parent directory.
+    
+    mkdir - Creates a new directory.
+    
+    rmdir - **Removes** a directory.
+    
+    touch - Create a new empty file.
+    
+    rm - **Remove** a file.
+    
+    rm -rf- This **removes** a file with force. **Everything** in the file will be deleted with no questons asked.
+    
+    mv - Rename a drectory.
+    
+### Git and GitHub Commands
+    git init - Initalize a repostory.
+    
+    rm -rf .git - Uninitalize
+    
+    git add - Adds a file to the commited stage.
+    
+    git add --all - Includes all changes.
+    
+    git commit - Record the code.
+    
+    git push - Used to push changes to the remote repostory.
+    
