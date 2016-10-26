@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>GitHub Tutorial by samanthaferris</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>GitHub Tutorial</h1>
+        <p>Git Started Now!</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/samanthaferris/github-tutorial" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/samanthaferris/github-tutorial/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/samanthaferris/github-tutorial/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Samantha Ferris</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<ul>
+<li>
+<strong>Git</strong> is used to create "snapshots" of code. It is used to reload code. Git runs in the command line and you can use it for many things. You can create and organize files, edit them, and eventually commit. This is used to store the code you have created in the cloud. </li>
+</ul>
+
+<ul>
+<li><p><strong>GitHub</strong> is used to store code into the cloud. You can keep track of changes and collaborate on files. </p></li>
+<li><p><strong>Git</strong> does <em><strong>not</strong></em> require GitHub in order to work, <em>but <strong>GitHub</strong> requires <strong>Git</strong>.</em></p></li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<p>For the initial setup, you need to connect your c9 account to GitHub. Here are the steps to doing that.
+First, you must create a GitHub account. When you're done with that you can create a SSH Key for c9!</p>
+
+<ul>
+<li><p>Go to GitHub and click the profile icon at the top right, go to settings and look at the left sidebar. You should see "SSH and GPG keys" section. Click on that.</p></li>
+<li><p>When you're done with that, click on "New SSH key", title it "cloud9". </p></li>
+<li><p>Switch to your c9 tab, click the right gear then open "SSH Keys". Copy and paste your SSH key into GitHub. It should start with <strong>ssh-rsa</strong>. Add the SSH key. </p></li>
+<li><p>Finally, open your folder and check by typing "ssh -T <a href="mailto:git@github.com">git@github.com</a>" you should get the message, "Hi <strong>username</strong>! You've successfully authenticated, but GitHub does not provide shell access." This is fine, that means it worked!</p></li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<p>To create a repo you must do the following:</p>
+
+<ul>
+<li>
+<p>cd into workspace and make a file called "first-repo".</p>
+
+<ul>
+<li>cd ~/workspace</li>
+<li>mkdir first-repo</li>
+<li>cd first-repo</li>
+<li>git init</li>
+</ul>
+</li>
+<li>
+<p>After that, add a README file.</p>
+
+<ul>
+<li>touch README.md</li>
+<li>open the README </li>
+<li>save, add</li>
+<li>git commit -m "messsage". Make sure it makes sense! That is gonna help you out a lot.
+Now, we have to make the remote repo. go to GitHub and find "New repositor" It should be in the top-right. Name it <strong>first-repo</strong>. You names should <em>always</em> match. 
+Create your repository.
+When you're done. Clck on "SSH". This is a lot better than HTTPS. Copy and paste the two links into your command line.</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p>We use a lot of commands in git. Here are some that we use on a daily basis.</p>
+
+<h4>
+<a id="savng-work-onto-github" class="anchor" href="#savng-work-onto-github" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Savng work onto GitHub</h4>
+
+<p>Here is the work flow for savng your code onto the site.
+    git add file name
+    git commit -m "message relevant to what you did"
+    git push
+This is used constantly so it's something that you should remember.</p>
+
+<h3>
+<a id="stuck" class="anchor" href="#stuck" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Stuck?</h3>
+
+<pre><code>q (while in git log) - Escape
+
+ctrl x - Leave commit
+</code></pre>
+
+<h3>
+<a id="commands" class="anchor" href="#commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Commands</h3>
+
+<p>Here are some helpful commands to know. 
+    git status - this is a way to see what you've done recently while coding. You can use it to check many things. This is helpful to remember because it does not change your code in anyway.</p>
+
+<p><code>cd</code> - Changes directory.
+        .. - Goes up one level to the parent directory.</p>
+
+<p><code>mkdir</code> - Creates a new directory.</p>
+
+<p><code>rmdir</code> - Removes a directory.</p>
+
+<p><code>touch</code> - Create a new empty file.</p>
+
+<p><code>rm</code> - Removes a file.</p>
+
+<p><code>rm -rf</code> - This removes a file with force. Everything in the file will be deleted with no questons asked.</p>
+
+<p><code>mv</code> - Rename a drectory.</p>
+
+<h3>
+<a id="git-and-github-commands" class="anchor" href="#git-and-github-commands" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git and GitHub Commands</h3>
+
+<p><code>git init</code> - Initalize a repostory.</p>
+
+<p><code>rm -rf .git</code> - Uninitalize</p>
+
+<p><code>git add</code> - Adds a file to the commited stage.</p>
+
+<p><code>git add --all</code> - Includes all changes.</p>
+
+<p><code>git commit</code> - Record the code.</p>
+
+<p><code>git push</code> - Used to push changes to the remote repostory.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/samanthaferris">samanthaferris</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
