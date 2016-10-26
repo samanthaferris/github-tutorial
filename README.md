@@ -56,39 +56,39 @@ Here is the work flow for savng your code onto the site.
 This is used constantly so it's something that you should remember.
 
 ### Stuck?
-q (while in git log) - Escape
+    q (while in git log) - Escape
 
-ctrl x - Leave commit
+    ctrl x - Leave commit
 
 ### Commands
 Here are some helpful commands to know. 
     git status - this is a way to see what you've done recently while coding. You can use it to check many things. This is helpful to remember because it does not change your code in anyway.
     
-    cd - Changes directory.
+`cd` - Changes directory.
         .. - Goes up one level to the parent directory.
     
-    mkdir - Creates a new directory.
+`mkdir` - Creates a new directory.
     
-    rmdir - Removes a directory.
+`rmdir` - Removes a directory.
     
-    touch - Create a new empty file.
+`touch` - Create a new empty file.
     
-    rm - Removes a file.
+`rm` - Removes a file.
     
-    rm -rf- This removes a file with force. Everything in the file will be deleted with no questons asked.
+`rm -rf` - This removes a file with force. Everything in the file will be deleted with no questons asked.
     
-    mv - Rename a drectory.
+`mv` - Rename a drectory.
     
 ### Git and GitHub Commands
-    git init - Initalize a repostory.
+`git init` - Initalize a repostory.
     
-    rm -rf .git - Uninitalize
+`rm -rf .git` - Uninitalize
     
-    git add - Adds a file to the commited stage.
+`git add` - Adds a file to the commited stage.
     
-    git add --all - Includes all changes.
+`git add --all` - Includes all changes.
     
-    git commit - Record the code.
+`git commit` - Record the code.
     
-    git push - Used to push changes to the remote repostory.
+`git push` - Used to push changes to the remote repostory.
     
